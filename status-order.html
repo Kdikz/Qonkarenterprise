@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Cek Status Order | Qonkar Enterpris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="top-header">
+        <a href="index.html" class="logo">
+            <img src="assets/logo/logo.png" alt="Qonkar Enterpris">
+        </a>
+    </div>
+</header>
+
+<section class="about">
+    <div class="status-box">
+
+        <h2 style="text-align:center;margin-bottom:10px;">
+            🔍 Cek Status Order
+        </h2>
+
+        <p style="text-align:center;margin-bottom:25px;color:#555;">
+            Masukkan data Anda, sistem akan mengarahkan ke WhatsApp admin
+        </p>
+
+        <label>Nomor Transaksi</label>
+        <input type="text" id="transaksi" placeholder="Contoh: QNK-2026-001">
+
+        <label>Nomor Handphone</label>
+        <input type="text" id="hp" placeholder="Contoh: 08xxxxxxxxxx">
+
+        <button class="btn" style="width:100%;margin-top:15px;"
+            onclick="cekStatusOrderWA()">
+            Cek Status via WhatsApp
+        </button>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <iframe 
+            src="https://maps.google.com/maps?q=indonesia&output=embed">
+        </iframe>
+    </div>
+    <div class="footer-right">
+        <h3>Qonkar Enterpris</h3>
+        <p>0853-5552-5657</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,421 @@
+/* ================= RESET ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+/* ================= HEADER ================= */
+.header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.logo img {
+    height: 55px;
+}
+
+.search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.search-box input {
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    width: 230px;
+}
+
+.search-box button {
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    padding: 0 18px;
+    cursor: pointer;
+}
+
+/* ================= NAVBAR ================= */
+.navbar {
+    background: #1e88e5;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.navbar ul li a {
+    display: block;
+    padding: 14px 22px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active {
+    background: #1565c0;
+    border-bottom: 3px solid #fff;
+}
+
+/* ================= BANNER ================= */
+.banner {
+    background: #87ceeb;
+    padding: 60px 5%;
+}
+
+.banner-box {
+    background: #fff;
+    padding: 60px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.banner-box h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+/* ================= ABOUT ================= */
+.about {
+    padding: 70px 5%;
+}
+
+.about-container {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-container img {
+    width: 320px;
+    border-radius: 12px;
+}
+
+.about-text {
+    background: #f5f5f5;
+    padding: 35px;
+    border-radius: 12px;
+}
+
+/* ================= SERVICE ================= */
+.service {
+    background: #1e88e5;
+    padding: 70px 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-box {
+    background: #fff;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service-box h3 {
+    margin: 20px 0;
+}
+
+.btn {
+    background: #1e88e5;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* ================= CLIENT ================= */
+.client {
+    padding: 70px 5%;
+    text-align: center;
+}
+
+.client-slider {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.client-item {
+    border: 1px solid #ddd;
+    padding: 25px;
+    border-radius: 10px;
+    background: #fafafa;
+}
+
+/* ================= TESTIMONI ================= */
+.testimoni {
+    padding: 70px 5%;
+}
+
+.testimoni h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.testi {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 35px;
+    align-items: center;
+}
+
+.testi.right {
+    flex-direction: row;
+}
+
+.testi.left {
+    flex-direction: row-reverse;
+}
+
+.testi img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+/* ================= FOOTER ================= */
+.footer {
+    background: #000;
+    color: #fff;
+    display: flex;
+    padding: 50px 5%;
+    gap: 40px;
+}
+
+.footer-left iframe {
+    width: 100%;
+    height: 280px;
+    border: none;
+}
+
+.footer-left {
+    width: 50%;
+}
+
+.footer-right {
+    width: 50%;
+}
+
+.footer-right h3 {
+    margin-top: 15px;
+}
+
+.social a {
+    display: inline-block;
+    margin-right: 12px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+
+    .about-container {
+        flex-direction: column;
+    }
+
+    .service {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-slider {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .banner-box {
+        padding: 30px;
+    }
+
+    .banner-box h1 {
+        font-size: 26px;
+    }
+
+    .service {
+        grid-template-columns: 1fr;
+    }
+
+    .client-slider {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box input {
+        width: 150px;
+    }
+}
+
+
+
+
+
+
+
+
+/* ================= PRODUK GRID ================= */
+.product-grid,
+.client-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.service-box {
+    cursor: pointer;
+    transition: 0.35s;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.service-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+}
+
+.service-box p {
+    font-weight: 600;
+    color: #1e88e5;
+}
+
+/* ================= DETAIL PRODUK ================= */
+.about-container input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.about-container input:focus {
+    outline: none;
+    border-color: #1e88e5;
+}
+
+/* ================= FAQ ================= */
+.faq-item h4 {
+    background: #1e88e5;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+
+.faq-answer {
+    border-left: 4px solid #1e88e5;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ================= BLOG ================= */
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px,1fr));
+    gap: 30px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: 0.35s;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-card div {
+    padding: 20px;
+}
+
+/* ================= STATUS ORDER ================= */
+.status-box {
+    max-width: 450px;
+    margin: auto;
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.status-box input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+/* ================= SIPLAH ================= */
+.siplah-box {
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    background: #f5faff;
+    border-radius: 18px;
+}
+
+/* ================= ANIMATION ================= */
+@keyframes fadeIn {
+    from {opacity:0; transform: translateY(10px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+
+
+
+
+
+
+
+

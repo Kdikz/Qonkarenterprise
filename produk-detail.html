@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Produk | Qonkar Enterpris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header class="header">
+    <div class="top-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo/logo.png">
+            </a>
+        </div>
+    </div>
+</header>
+
+<section class="about">
+    <div class="about-container">
+
+        <img src="assets/img/konveksi.jpg" id="produkImg">
+
+        <div class="about-text">
+            <h2 id="namaProduk">Nama Produk</h2>
+
+            <p>
+                Silakan upload desain, pilih jumlah, dan hubungi admin untuk pemesanan.
+            </p>
+
+            <br>
+
+            <label>Upload Desain</label><br>
+            <input type="file"><br><br>
+
+            <label>Jumlah</label><br>
+            <input type="number" value="1"><br><br>
+
+            <label>Link Template (opsional)</label><br>
+            <input type="text" placeholder="https://"><br><br>
+
+            <p><strong>Promo:</strong> Diskon khusus pemesanan banyak</p>
+
+            <br>
+            <button class="btn" onclick="beliProduk(document.getElementById('namaProduk').innerText)">
+                Pesan via WhatsApp
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-left">
+        <iframe 
+            src="https://maps.google.com/maps?q=indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+    </div>
+
+    <div class="footer-right">
+        <h3>Qonkar Enterpris</h3>
+        <p>0895-0937-4193</p>
+    </div>
+</footer>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    const nama = params.get("nama");
+    if (nama) {
+        document.getElementById("namaProduk").innerText = nama;
+    }
+</script>
+
+</body>
+</html>

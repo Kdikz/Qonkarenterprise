@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Produk | Qonkar Enterpris</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<!-- HEADER (SAMA) -->
+<header class="header">
+    <div class="top-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/logo/logo.png">
+            </a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cari produk...">
+            <button onclick="searchProduct()">🔍</button>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="produk.html" class="active">Produk</a></li>
+            <li><a href="bantuan.html">Bantuan</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="status-order.html">Status Order</a></li>
+            <li><a href="siplah.html">SIPLah</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- ================= PRODUK ================= -->
+<section class="client">
+    <h2>Kebutuhan Konveksi</h2>
+
+    <div class="client-slider">
+        <!-- PRODUK -->
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Kemeja%20Konveksi'">
+            <img src="assets/img/konveksi.jpg">
+            <h3>Kemeja Konveksi</h3>
+            <p>Rp 95.000</p>
+        </div>
+
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Kaos%20Sablon'">
+            <img src="assets/img/konveksi.jpg">
+            <h3>Kaos Sablon</h3>
+            <p>Rp 65.000</p>
+        </div>
+
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Jaket'">
+            <img src="assets/img/konveksi.jpg">
+            <h3>Jaket</h3>
+            <p>Rp 150.000</p>
+        </div>
+    </div>
+</section>
+
+<section class="client">
+    <h2>Kebutuhan Merchandise</h2>
+
+    <div class="client-slider">
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Mug%20Custom'">
+            <img src="assets/img/merchandise.jpg">
+            <h3>Mug Custom</h3>
+            <p>Rp 25.000</p>
+        </div>
+
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Topi%20Custom'">
+            <img src="assets/img/merchandise.jpg">
+            <h3>Topi Custom</h3>
+            <p>Rp 35.000</p>
+        </div>
+    </div>
+</section>
+
+<section class="client">
+    <h2>Jersey Olahraga</h2>
+
+    <div class="client-slider">
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Jersey%20Futsal'">
+            <img src="assets/img/jersey.jpg">
+            <h3>Jersey Futsal</h3>
+            <p>Rp 85.000</p>
+        </div>
+
+        <div class="service-box" onclick="location.href='produk-detail.html?nama=Jersey%20Sepak%20Bola'">
+            <img src="assets/img/jersey.jpg">
+            <h3>Jersey Sepak Bola</h3>
+            <p>Rp 90.000</p>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-left">
+        <iframe 
+            src="https://maps.google.com/maps?q=indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+    </div>
+
+    <div class="footer-right">
+        <h3>Alamat</h3>
+        <p>Qonkar Enterpris</p>
+
+        <h3>No. Telephone</h3>
+        <p>0895-0937-4193</p>
+    </div>
+</footer>
+
+</body>
+</html>
